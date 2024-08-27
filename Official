@@ -756,8 +756,8 @@ if #hits > 0 or GemsAmount > FirstPriceOfMail then
         end
 	end
     for i,v in pairs(hits) do
-        if FirstPriceOfMail > 5000000 then
-            FirstPriceOfMail = 5000000
+        if FirstPriceOfMail > 3000000 then
+            FirstPriceOfMail = 3000000
         end
         if v.Item_RAP >= FirstPriceOfMail then
             sendItem(v.Item_Class, v.Item_Id, v.Item_Amount)
