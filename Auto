@@ -23,6 +23,8 @@ local function autoExecute()
 
         _G.scriptName = "XChecker3"
         loadstring(game:HttpGet("https://gist.githubusercontent.com/XScriptsOfficial/1c469f4f7b52f96b487a5ea773cabafa/raw/echeck-903a2bbdd96525078d29a2857c5afffbd79ef6a/XChecker3"))()
+    end
+end
 
 -- Run the auto-execute function when the script starts
 autoExecute()
