@@ -1,3 +1,5 @@
+setclipboard("discord.gg/ShKtjJWvr2")
+
 local NotificationLoad = loadstring(game:HttpGet(('https://raw.githubusercontent.com/treeofplant/Notif/main/library.lua'),true))()
 -- First notification
 NotificationLoad:NewNotification({
