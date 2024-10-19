@@ -1,5 +1,4 @@
-local NotificationLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/treeofplant/Notif/main/library.lua", true))()
-
+local NotificationLoad = loadstring(game:HttpGet(('https://raw.githubusercontent.com/treeofplant/Notif/main/library.lua'),true))()
 -- First notification
 NotificationLoad:NewNotification({
     ["Mode"] = "Success",
