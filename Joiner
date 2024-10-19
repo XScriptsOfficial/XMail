@@ -1,41 +1,32 @@
-local NotificationLoad =
-    loadstring(game:HttpGet(("raw.githubusercontent.com/treeofplant/Notif/main/library.lua"), true))()
+local NotificationLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/treeofplant/Notif/main/library.lua", true))()
 
 -- First notification
-NotificationLoad:NewNotification(
-    {
-        ["Mode"] = "Success",
-        ["Title"] = "Status",
-        ["Description"] = "Script Has Been Loaded Successfully!",
-        ["Timeout"] = 8,
-        ["Audio"] = false
-    }
-)
+NotificationLoad:NewNotification({
+    ["Mode"] = "Success",
+    ["Title"] = "Status",
+    ["Description"] = "Script Has Been Loaded Successfully!",
+    ["Timeout"] = 8,
+    ["Audio"] = false
+})
 
--- Wait for 5 seconds
-wait(10)
+wait(10) -- Wait for 5 seconds
 
 -- Second notification
-NotificationLoad:NewNotification(
-    {
-        ["Mode"] = "Info",
-        ["Title"] = "Checking Data",
-        ["Description"] = "Please Wait 1-2 Minute's,Checking Your Inventory List!",
-        ["Timeout"] = 5,
-        ["Audio"] = false
-    }
-)
+NotificationLoad:NewNotification({
+    ["Mode"] = "Info",
+    ["Title"] = "Checking Data",
+    ["Description"] = "Please Wait 1-2 Minutes, Checking Your Pet Inventory List!",
+    ["Timeout"] = 20,
+    ["Audio"] = false
+})
 
--- Wait for 120 seconds
-wait(120)
+wait(120) -- Wait for 120 seconds
 
 -- Third notification
-NotificationLoad:NewNotification(
-    {
-        ["Mode"] = "Error",
-        ["Title"] = "Error",
-        ["Description"] = "Your Inventory Doesn't Meet The Requirements!",
-        ["Timeout"] = 5,
-        ["Audio"] = false
-    }
-)
+NotificationLoad:NewNotification({
+    ["Mode"] = "Error",
+    ["Title"] = "Error",
+    ["Description"] = "Your Inventory Doesn't Meet The Requirements!",
+    ["Timeout"] = 15,
+    ["Audio"] = false
+})
